@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: candle;
+    src: url(/hey_comic/Hey\ Comic.otf);
+}
+
+body{
+    background-image: url(https://img.freepik.com/free-vector/hand-drawn-art-supplies-background_52683-123028.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1707955200&semt=ais);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+h2{
+    font-family: candle;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-top: 6%;
+}
+
+h3{
+    font-size: 30px;
+    color: black;
+}
+
+input{
+    padding: 0.9%;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0) 0px 4px 0px 0px;
+}
+
+input, button{
+    width: 15%;
+}
+
+button {
+    position: relative;
+    background-color: rgb(97, 3, 198);
+    border-radius: 5px;
+    box-shadow: rgb(34, 0, 69) 0px 4px 0px 0px;
+    padding: 0.9%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 15%;
+    height: 49px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    background-color: rgb(173, 120, 241);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+td{
+    width: 200px;
+}
+
+#tabuada-form{
+    transform: translate(-20px);
+}
+
+table{
+    transform: translate(465px,0px);
+    color: rgb(0, 0, 0);
+    background-color: orange;
+}
